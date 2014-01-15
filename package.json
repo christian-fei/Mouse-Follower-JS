@@ -1,0 +1,21 @@
+{
+  "name": "PerfectJekyllWorkflow",
+  "description": "Jekyll + Grunt + LiveReload + Compass + Uglify",
+  "author": "Christian Fei",
+  "homepage": "http://christian-fei.com",
+  "version": "0.1.1",
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-uglify": "~0.2.0",
+    "grunt-contrib-connect": "~0.3.0",
+    "grunt-contrib-watch": "~0.4.4",
+    "grunt-contrib-compass": "~0.4.0",
+    "grunt-autoprefixer": "~0.2.x",
+    "grunt-htmlcompressor": "~0.1.x",
+    "grunt-bg-shell": "~2.1.0",
+    "grunt-open": "~0.2.0",
+    "connect-livereload": "*",
+    "matchdep": "~0.1.2",
+    "grunt-contrib-cssmin": "~0.7.0"
+  }
+}

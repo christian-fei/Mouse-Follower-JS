@@ -1,0 +1,91 @@
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.cube {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  top: 50%;
+  left: 50%;
+  margin-top: -75px;
+  margin-left: -75px;
+  border: 1px solid lightgrey;
+  -webkit-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transform-origin: center center;
+  -ms-transform-origin: center center;
+  transform-origin: center center;
+}
+
+.cube.white .face {
+  background-color: #fff;
+  color: #000;
+}
+
+.face {
+  position: absolute;
+  border: 1px solid #000;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  color: white;
+  opacity: .7;
+  text-align: center;
+  line-height: 150px;
+}
+
+.face span {
+  font-size: 7em;
+}
+
+.face img,
+.face a {
+  display: block;
+  margin: 0;
+  max-width: 100%;
+}
+
+.face:nth-child(2) {
+  -webkit-transform: rotateX(-90deg) translateZ(-75px) translateY(75px);
+  -ms-transform: rotateX(-90deg) translateZ(-75px) translateY(75px);
+  transform: rotateX(-90deg) translateZ(-75px) translateY(75px);
+}
+
+.face:nth-child(3) {
+  -webkit-transform: rotateX(-90deg) translateZ(75px) translateY(75px);
+  -ms-transform: rotateX(-90deg) translateZ(75px) translateY(75px);
+  transform: rotateX(-90deg) translateZ(75px) translateY(75px);
+}
+
+.face:nth-child(4) {
+  -webkit-transform: rotateY(-90deg) translateX(-75px) translateZ(75px);
+  -ms-transform: rotateY(-90deg) translateX(-75px) translateZ(75px);
+  transform: rotateY(-90deg) translateX(-75px) translateZ(75px);
+}
+
+.face:nth-child(5) {
+  -webkit-transform: rotateY(-90deg) translateX(-75px) translateZ(-75px);
+  -ms-transform: rotateY(-90deg) translateX(-75px) translateZ(-75px);
+  transform: rotateY(-90deg) translateX(-75px) translateZ(-75px);
+}
+
+.face:nth-child(6) {
+  -webkit-transform: rotateY(180deg) translateZ(150px);
+  -ms-transform: rotateY(180deg) translateZ(150px);
+  transform: rotateY(180deg) translateZ(150px);
+}
+
+html,
+body {
+  height: 100%;
+  min-height: 100%;
+  width: 100%;
+  min-width: 100%;
+}
