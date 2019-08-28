@@ -1,4 +1,4 @@
 Mouse-Follower-JS
 =================
 
-[live demo](http://christian-fei.com/mousefollower-js/)
+[live demo](https://christian-fei.github.io/Mouse-Follower-JS/)
